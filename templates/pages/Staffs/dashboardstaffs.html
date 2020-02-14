@@ -1,0 +1,165 @@
+{% extends "layouts/Staffs/commonlayoutstaffs.html" %}
+
+{% block heading %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Course
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Python</a>
+                  <a class="dropdown-item" href="#">Data Structure</a>
+                  <a class="dropdown-item" href="#">Autometa Theory</a>
+                </div>
+              </div>
+              
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="margin-left:10%;">
+                  Select Month
+                </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">January</a>
+                    <a class="dropdown-item" href="#">February</a>
+                    <a class="dropdown-item" href="#">March</a>
+                    <a class="dropdown-item" href="#">April</a>
+                    <a class="dropdown-item" href="#">May</a>
+                    <a class="dropdown-item" href="#">June</a>
+                    <a class="dropdown-item" href="#">July</a>
+                    <a class="dropdown-item" href="#">August</a>
+                    <a class="dropdown-item" href="#">Sepetember</a>
+                    <a class="dropdown-item" href="#">october</a>
+                    <a class="dropdown-item" href="#">November</a>
+                    <a class="dropdown-item" href="#">December</a>
+                   </div>
+             </div>
+             <div class="dropdown">
+                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"style="margin-left:30%;">
+                  Select Year
+                 </button>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">2019</a>
+                    <a class="dropdown-item" href="#">2018</a>
+                    <a class="dropdown-item" href="#">2017</a>
+                  </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"style="margin-left:30%;">
+                 Select Department
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                   <a class="dropdown-item" href="#">COMPUTER SCIENCE</a>
+                   <a class="dropdown-item" href="#">CIVIL ENGINEERING</a>
+                   <a class="dropdown-item" href="#">ETC</a>
+                 </div>
+           </div>
+        </div><br>
+
+         <!-- Content Row -->
+    <div class="row">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
+                <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
+                    <div class="card-body">
+                        <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px;" class="card-title">TOTAL STUDENTS</b>
+                        <hr>
+                        <div style="display:flex;justify-content:space-between;">
+                            <i style="color:#161313;font-size:24px;" class="fa fa-user" aria-hidden="true"></i>
+                            <p style="color:#161313;font-size:18px;">100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
+                <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
+                    <div class="card-body">
+                        <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px;" class="card-title">CONDUCTED SESSIONS</b>
+                        <hr>
+                        <div style="display:flex;justify-content:space-between;">
+                            <i style="color:#161313;font-size:24px;" class="fa fa-calendar" aria-hidden="true"></i>
+                            <p style="color:#161313;font-size:18px;">50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
+                <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
+                    <div class="card-body">
+                        <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px;" class="card-title">TOTAL LECTURES</b>
+                        <hr>
+                        <div style="display:flex;justify-content:space-between;">
+                            <i style="color:#161313;font-size:24px;" class="fa fa-calendar" aria-hidden="true"></i>
+                            <p style="color:#161313;font-size:18px;">76</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
+                <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
+                    <div class="card-body">
+                        <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px;" class="card-title">SYLLABUS COVERED</b>
+                        <hr>
+                        <div style="display:flex;justify-content:space-between;">
+                            <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
+                            <p style="color:#161313;font-size:18px;">50%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <!-- Area Chart -->
+               <div class="col-xl-8 col-lg-7">
+                <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background:#ffffff";>
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-secondary">Student Progress</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="myAreaChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Pie Chart -->
+              <div class="col-xl-4 col-lg-5">
+                <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background:#ffffff">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <div>
+                        <h6 class="m-0 font-weight-bold text-secondary">Conduction Analysis</h6>
+                    </div>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2">
+                      <canvas id="myPieChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-center small">
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-sucess"></i> completed
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-primary"></i> pending
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-danger"></i> cancelled
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
