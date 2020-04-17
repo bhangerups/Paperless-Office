@@ -2,6 +2,15 @@ from flask import Flask
 from flask import render_template
 app=Flask(__name__)
 
+@app.route('/homepage')
+def homepage():
+     return render_template("/index.html")
+
+@app.route('/login')
+def login():
+     return render_template("/login.html")
+
+
 @app.route('/pages/Staffs/dashboardstaffs')
 def staffdashboard():
     return render_template("/pages/Staffs/dashboardstaffs.html")
