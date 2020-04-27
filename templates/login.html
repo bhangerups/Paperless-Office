@@ -20,11 +20,12 @@
  </head>
 
 <body>
-	<nav style="font-weight:600;display:flex;justify-content:space-between;background-image: linear-gradient(to right top, #d16ba5, #ca6eb3, #c073c0, #b378cd, #a37ed9, #9883e0, #8b89e7, #7d8eed, #7694f1, #6e9af5, #679ff8, #5fa5fb);">
+  
+	<nav style="font-weight:600; background-color: black;">
 		<div style="margin-left:30px;">
 				<a class="navbar-brand" href="#">
-					<img width="18%" src="/static/IMG/logo.png" alt="">
-					<span style="margin-left:10px;font-family:courier new;color:black;">Govt. of GOA</span>
+					<!--<img width="18%" src="/static/IMG/logo.png" alt="">-->
+					<span style="margin-left:10px;font-family:courier new;background-color: white;">Govt. of GOA</span>
 				</a>
 		</div>
 		
@@ -36,10 +37,10 @@
 		</div>
     </nav>
     <center>
-         <div style="margin-top:50px;">   
+         <div style="margin-top:15%;">  
             <div class="card shadowforcards" style="width:40rem;">
                   <div class="card-body">
-                      <img style="width:12%;" src="/static/IMG/logo.png"/>
+                     <!-- <img style="width:12%;" src="/static/IMG/logo.png"/>-->
                       <hr><br>
                       {% with messages = get_flashed_messages() %}
                       {% if messages %}
@@ -60,7 +61,7 @@
                               <option selected disabled>Select User</option> 
                               <option value="ADMIN">Admin</option>
                               <option value="HIGHER_AUTHORITY">Higher_Authority</option>
-                              <option value="TEACHER">Teacher</option>
+                              <option value="STAFF">Staff</option>
                             </select>
                           </div>
                         </div>

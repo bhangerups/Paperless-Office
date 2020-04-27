@@ -1,0 +1,153 @@
+{% extends "layouts/Staffs/commonlayoutstaffs.html" %}
+{% block heading %}User profile{% endblock %}
+{% block content %}
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="card card-user shadowforcards" style="margin-top: 10%;">
+          <div class="card-image">
+              <img src="/static/IMG/gradient.jpg" alt="...">
+          </div>
+          <div class="card-body ">
+            <div class="author">
+              <a href="#">
+                <img class="avatar border-gray" src="/static/IMG/profile.png" alt="...">
+                <h5 class="title" style="margin-top=2%;">Bhange Rupali</h5>
+              </a>
+              <p class="description">
+                <!-- <center> -->
+              <table style="font-size: small;" cellpadding="5">
+                <tr>
+                  <td align="left" style="font-weight: 600;">Email:</td>
+                  <td align="left">bhangerupali98@gmail.com</td>
+                </tr>
+                <tr>
+                  <td align="left" style="font-weight: 600;">Unique Id: </td>
+                  <td align="left">S1032170429</td>
+                </tr>
+                                            
+                <tr>
+                  <td align="left" style="font-weight: 600;">Passout Year: </td>
+                  <td align="left">2020</td>
+                </tr>
+              </table>
+                <!-- </center> -->
+          
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>       
+      <!--second card-->
+      <div class="col-md-7" style="margin-top: 4%;">
+        <div class="card card-user shadowforcards">
+          <div class="card-body">
+            <b>personal_Details:</b>
+            <!-- Button trigger modal -->
+            <center>
+            <div style="margin-left: 3%; margin-top: 3%;">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#personal_Details">
+              Personal Details</button>
+            </div>
+            </center>
+
+            <!-- Modal -->
+            <div class="modal fade" id="personal_Details" tabindex="-1" role="dialog" aria-labelledby="         exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <center><h5 class="personal_Details" id="personal_DetailsLabel"><b>personal_Details</b></h5></center>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body mx-3">
+                      <div class="form-group">
+                        <div class="md-form mb-3" >
+                          <label>Firstname:</label>
+                          <input type="grey-text" id="defaultForm-firstname" class="form-control validate">
+                        </div>
+
+                        <div class="md-form mb-3" >
+                           <label>Middlename:</label>
+                          <input type="grey-text" id="defaultForm-middlename" class="form-control validate">
+                        </div>
+
+                        <div class="md-form mb-3">
+                           <label>Lastname:</label>
+                          <input type="grey-text" id="defaultForm-lastname" class="form-control validate">
+                        </div>
+
+                        <div class="md-form mb-3">
+                          <label>Adress:</label>
+                          <input type="grey-text" id="defaultForm-address" class="form-control validate">
+                        </div>
+
+                        <div class="sm-form mb-3">
+                          <label>date_of_birth:</label>                          
+                          <input type="date" id="defaultForm-DOB" class="form-control validate">
+                        </div>
+
+                        <div class="md-form mb-3">
+                           <label>Email:</label>
+                          <input type="email" id="defaultForm-email" class="form-control validate">
+                        </div>
+
+                        <div class="md-form mb-3">
+                          <label>Password :</label>
+                          <input type="defaultForm-pass" id="defaultForm-pass" class="form-control validate">
+                        </div>
+                      </div>
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+                <!--end model-->
+              </div>
+            </div>
+          </div>
+  
+        <div>
+          <p><b>Qualification_Details</b></p>
+              <center>
+              <div style="margin-left: 3%; margin-top: 3%;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#qualification_Details">
+                Qualification_details</button>
+              </div>
+              </center>
+              <div class="modal fade" id="qualification_Details" tabindex="-1" role="dialog" aria-labelledby="         exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <center><h5 class="qualification_Details" id="qualification_DetailsLabel"><b>Qualification_Details</b></h5></center>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body mx-3">
+                      
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+                <!--end model-->
+
+        </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+ 

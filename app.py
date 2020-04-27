@@ -15,6 +15,26 @@ def login():
 def staffdashboard():
     return render_template("/pages/Staffs/dashboardstaffs.html")
 
+@app.route('/pages/Staffs/userprofilestaffs')
+def userprofilestaffs():
+    return render_template("/pages/Staffs/userprofilestaffs.html")
+
+
+@app.route('/pages/Staffs/coursedocumentsstaffs')
+def coursedocumentsstaffs():
+    return render_template("/pages/Staffs/coursedocumentsstaffs.html")
+
+@app.route('/pages/Staffs/syllabusdocumentsstaffs')
+def syllabusdocumentsstaffs():
+    return render_template("/pages/Staffs/syllabusdocumentsstaffs.html")
+
+@app.route('/pages/Staffs/paperanalysis')
+def paperanalysis():
+    return render_template("/pages/Staffs/paperanalysis.html")
+
+
+
+
 @app.route('/pages/HigherAuthority/dashboardhigher')
 def dashboardhigher():
     return render_template("/pages/HigherAuthority/dashboardhigher.html")
