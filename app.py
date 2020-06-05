@@ -41,8 +41,6 @@ def notificationsstaffs():
     return render_template("/pages/Staffs/notificationsstaffs.html")
 
 
-
-
 @app.route('/pages/HigherAuthority/dashboardhigher')
 def dashboardhigher():
     return render_template("/pages/HigherAuthority/dashboardhigher.html")
@@ -50,6 +48,11 @@ def dashboardhigher():
 @app.route('/pages/Admin/dashboardadmin')
 def dashboardadmin():
     return render_template("/pages/Admin/dashboardadmin.html")
+
+@app.route('/pages/HigherAuthority/profilehigherauthority')
+def profilehigherauthority():
+    return render_template("/pages/HigherAuthority/profilehigherauthority.html")
+
 
 
 
