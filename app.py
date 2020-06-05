@@ -32,6 +32,14 @@ def syllabusdocumentsstaffs():
 def paperanalysis():
     return render_template("/pages/Staffs/paperanalysis.html")
 
+@app.route('/pages/Staffs/resultanalysisstaffs')
+def resultanalysisstaffs():
+    return render_template("/pages/Staffs/resultanalysisstaffs.html")
+
+@app.route('/pages/Staffs/notificationsstaffs')
+def notificationsstaffs():
+    return render_template("/pages/Staffs/notificationsstaffs.html")
+
 
 
 

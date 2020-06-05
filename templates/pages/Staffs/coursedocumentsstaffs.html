@@ -2,82 +2,84 @@
 {% block heading %}Course Documents{% endblock %}
 
 {% block content %}
-<div class="content">
-    <div class="container-fluid">
-        <div class="row" style="margin-left:3%; ">
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Select Course
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Python</a>
-                  <a class="dropdown-item" href="#">Data Structure</a>
-                  <a class="dropdown-item" href="#">Autometa Theory</a>
-                </div>
-            </div>
-              
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="margin-left:10%;">
-                  Select class
-                </button>
+<div class="card" style="margin-top: 1%;">
+  <div class="content">
+      <div class="container-fluid">
+          <div class="row" style="margin-left:3%; ">
+              <div class="dropdown" style="margin-top: 2%;">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Course
+                  </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">FE</a>
-                    <a class="dropdown-item" href="#">SE</a>
-                    <a class="dropdown-item" href="#">TE</a>
-                    <a class="dropdown-item" href="#">BE</a>
-                   </div>
-            </div>
-             <div class="dropdown">
-                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"style="margin-left:30%;">
-                  Select Semister
-                 </button>
-                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Sem I</a>
-                    <a class="dropdown-item" href="#">Sem II</a>
-                    <a class="dropdown-item" href="#">Sem III</a>
-                    <a class="dropdown-item" href="#">Sem IV</a>
-                    <a class="dropdown-item" href="#">Sem V</a>
-                    <a class="dropdown-item" href="#">Sem VI</a>
-                    <a class="dropdown-item" href="#">Sem VII</a>
-                    <a class="dropdown-item" href="#">Sem VIII</a>
-                </div>
+                    <a class="dropdown-item" href="#">Python</a>
+                    <a class="dropdown-item" href="#">Data Structure</a>
+                    <a class="dropdown-item" href="#">Autometa Theory</a>
+                  </div>
+              </div>
+                
+              <div class="dropdown" style="margin-top: 2%;">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="margin-left:10%;">
+                    Select class
+                  </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">FE</a>
+                      <a class="dropdown-item" href="#">SE</a>
+                      <a class="dropdown-item" href="#">TE</a>
+                      <a class="dropdown-item" href="#">BE</a>
+                     </div>
+              </div>
+
+              <div class="dropdown" style="margin-top: 2%;">
+                   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"style="margin-left:30%;">
+                    Select Semister
+                   </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Sem I</a>
+                      <a class="dropdown-item" href="#">Sem II</a>
+                      <a class="dropdown-item" href="#">Sem III</a>
+                      <a class="dropdown-item" href="#">Sem IV</a>
+                      <a class="dropdown-item" href="#">Sem V</a>
+                      <a class="dropdown-item" href="#">Sem VI</a>
+                      <a class="dropdown-item" href="#">Sem VII</a>
+                      <a class="dropdown-item" href="#">Sem VIII</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    <!--card-->   
+    <div class="row" style="margin-top: 2%;">
+      <div class="col-md-5" style="margin-left:3%;">
+       <div class="card shadowforcards" style="display:flex;justify-content:space-between;background-image: #ffffff;border:2px solid black;">
+        <div>
+          <img  style="shadow-sm p-4 mb-5 bg-black rounded"  src="/static/IMG/course.png" class="card-img-top" alt="" class="rounded-pill">
+        </div>
+        <!--card body-->
+            <div class="card-body">
+              <h4 class="card-title"><b>Course Objective</b></h4>
+
+              <button onmouseout="hoverOut(id);" id="btn1" onmouseover="hoverOver(id);" class="text-left btn btn-secondary " style="border-color:blue;color: black;btn-left">Upload Course Objective</button>
+              <button onmouseout="hoverOutReport(id);" id="btn2" onmouseover="hoverOverReport(id);" class= "text-right btn btn-secondary " style="border-color:blue ;color: black; btn-right">view Objective</button>
             </div>
         </div>
-    </div>
-    
-  <!--card-->   
-  <div class="row" style="margin-top: 2%;">
-    <div class="col-md-5" style="margin-left:3%;">
-     <div class="card shadowforcards" style="display:flex;justify-content:space-between;background-image: #ffffff;border:2px solid black;">
-      <div>
-        <img  style="shadow-sm p-4 mb-5 bg-black rounded"  src="/static/IMG/course.png" class="card-img-top" alt="" class="rounded-pill">
       </div>
-      <!--card body-->
-          <div class="card-body">
-            <h4 class="card-title"><b>Course Objective</b></h4>
-
-            <button onmouseout="hoverOut(id);" id="btn1" onmouseover="hoverOver(id);" class="text-left btn btn-secondary " style="border-color:blue;color: black;btn-left">Upload Course Objective</button>
-            <button onmouseout="hoverOutReport(id);" id="btn2" onmouseover="hoverOverReport(id);" class= "text-right btn btn-secondary " style="border-color:blue ;color: black; btn-right">view Objective</button>
-          </div>
+      <!--card 2-->
+      <div class="col-md-5" style="margin-left:3%;">
+       <div class="card shadowforcards" style="display:flex;justify-content:space-between;background-image: #ffffff;border:2px solid black;">
+        <div>
+          <img  style="shadow-sm p-4 mb-5 bg-black rounded"  src="/static/IMG/course.png" class="card-img-top" alt="" class="rounded-pill">
+        </div>
+        <!--card body-->
+            <div class="card-body">
+              <h4 class="card-title"><b>Course Documents</b></h4>
+              <button onmouseout="hoverOut(id);" id="btn3" onmouseover="hoverOver(id);" class="text-left btn btn-secondary " style="border-color:blue;color: black;btn-left">Upload Datewise plan</button>
+              <button onmouseout="hoverOutReport(id);" id="btn4" onmouseover="hoverOverReport(id);" class= "text-right btn btn-secondary " style="border-color:blue ;color: black; btn-right">Edit Plan</button>
+            </div>
+        </div>
       </div>
     </div>
-    <!--card 2-->
-    <div class="col-md-5" style="margin-left:3%;">
-     <div class="card shadowforcards" style="display:flex;justify-content:space-between;background-image: #ffffff;border:2px solid black;">
-      <div>
-        <img  style="shadow-sm p-4 mb-5 bg-black rounded"  src="/static/IMG/course.png" class="card-img-top" alt="" class="rounded-pill">
-      </div>
-      <!--card body-->
-          <div class="card-body">
-            <h4 class="card-title"><b>Course Documents</b></h4>
-            <button onmouseout="hoverOut(id);" id="btn3" onmouseover="hoverOver(id);" class="text-left btn btn-secondary " style="border-color:blue;color: black;btn-left">Upload Datewise plan</button>
-            <button onmouseout="hoverOutReport(id);" id="btn4" onmouseover="hoverOverReport(id);" class= "text-right btn btn-secondary " style="border-color:blue ;color: black; btn-right">Edit Plan</button>
-          </div>
-      </div>
-    </div>
-  </div>
- </div>
-
+   </div>
+</div>
 <script>
 function hoverout(id) {
 document.getElementById(id).style.color="blue";
