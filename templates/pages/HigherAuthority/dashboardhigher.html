@@ -1,77 +1,100 @@
 {% extends "layouts/HigherAuthority/commonlayouthigherauthority.html" %}
 
-{% block heading %}Dashboard{% endblock %}
+{% block heading %}Dashboard Higher Authority {% endblock %}
 
 {% block content %}
 <div class="content">
     <div class="container-fluid">
-        <div class="row">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
-                    <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
-                        <div class="card-body">
-                            <b style=" margin-left: 3%; color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary;" class="card-title">TOTAL DOCUMENTS</b>
-                            <hr>
-                            <div style="display:flex;justify-content:space-between;">
-                                <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
-                                <p style="color:#161313;font-size:18px;">100</p>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
+                        <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: linear-gradient(to right top, #d16ba5, #ca6eb3, #c073c0, #b378cd, #a37ed9, #9883e0, #8b89e7, #7d8eed, #7694f1, #6e9af5, #679ff8, #5fa5fb); margin-top: 2%; margin-left: 2%;">
+                            <div class="card-body">
+                                <b style=" margin-left: 3%; color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary;" class="card-title">TOTAL DOCUMENTS</b>
+                                <hr>
+                                <div style="display:flex;justify-content:space-between;">
+                                    <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
+                                    <p style="color:#161313;font-size:18px;">100</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
-                    <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
-                        <div class="card-body">
-                            <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary;" class="card-title">PENDING DOCUMENTS</b>
-                            <hr>
-                            <div style="display:flex;justify-content:space-between;">
-                                <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
-                                <p style="color:#161313;font-size:18px;">50</p>
+            
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
+                        <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background:linear-gradient(to right top, #d16ba5, #ca6eb3, #c073c0, #b378cd, #a37ed9, #9883e0, #8b89e7, #7d8eed, #7694f1, #6e9af5, #679ff8, #5fa5fb); margin-top: 2%; margin-left: 2%;">
+                            <div class="card-body">
+                                <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary; margin-top: 2%; margin-left: 2%;" class="card-title">PENDING DOCUMENTS</b>
+                                <hr>
+                                <div style="display:flex;justify-content:space-between;">
+                                    <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
+                                    <p style="color:#161313;font-size:18px;">50</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
-                    <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
-                        <div class="card-body">
-                            <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary;" class="card-title">APPROVED DOCUMENTS</b>
-                            <hr>
-                            <div style="display:flex;justify-content:space-between;">
-                                <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
-                                <p style="color:#161313;font-size:18px;">76</p>
+            
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
+                        <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: linear-gradient(to right top, #d16ba5, #ca6eb3, #c073c0, #b378cd, #a37ed9, #9883e0, #8b89e7, #7d8eed, #7694f1, #6e9af5, #679ff8, #5fa5fb); margin-top: 2%; margin-left: 2%;">
+                            <div class="card-body">
+                                <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary; margin-top: 2%; margin-left: 2%;" class="card-title">APPROVED DOCUMENTS</b>
+                                <hr>
+                                <div style="display:flex;justify-content:space-between;">
+                                    <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
+                                    <p style="color:#161313;font-size:18px;">76</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
-                    <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
-                        <div class="card-body">
-                            <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary;" class="card-title">REJECTED DOCUMENTS</b>
-                            <hr>
-                            <div style="display:flex;justify-content:space-between;">
-                                <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
-                                <p style="color:#161313;font-size:18px;">10</p>
+            
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-sm-12">
+                        <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: linear-gradient(to right top, #d16ba5, #ca6eb3, #c073c0, #b378cd, #a37ed9, #9883e0, #8b89e7, #7d8eed, #7694f1, #6e9af5, #679ff8, #5fa5fb);margin-top: 2%; margin-left: 2%;">
+                            <div class="card-body">
+                                <b style="color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary; margin-top: 2%; margin-left: 2%;" class="card-title">REJECTED DOCUMENTS</b>
+                                <hr>
+                                <div style="justify-content:space-between;">
+                                    <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
+                                    <p style="color:#161313;font-size:18px;">10</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-xl-12">
-                    <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
-                        <div class="card-body">
-                            <b style="width: min-content; margin-left: 3%; color:#161313;font-weight:500%;font-weight:400;font-size:17px font-weight-bold text-secondary;" class="card-title">TOTAL DOCUMENTS</b>
-                            <hr>
-                            <div style="display:flex;justify-content:space-between;">
-                                <i style="color:#161313;font-size:24px;" class="fa fa-book" aria-hidden="true"></i>
-                                <p style="color:#161313;font-size:18px;">100</p>
+                    <div class="col-xl-12">
+                        <div class="card"; style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff;border-radius:10px;background: #ffffff;">
+                            <div class="card-body">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">First</th>
+                                      <th scope="col">Last</th>
+                                      <th scope="col">Handle</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Mark</td>
+                                      <td>Otto</td>
+                                      <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Jacob</td>
+                                      <td>Thornton</td>
+                                      <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Larry</td>
+                                      <td>the Bird</td>
+                                      <td>@twitter</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                             </div>
                         </div>
-                    </div>
-                </div>
-        
+                </div>    
     </div>
 </div>
 

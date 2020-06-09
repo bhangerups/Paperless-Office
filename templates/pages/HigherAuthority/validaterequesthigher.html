@@ -1,0 +1,56 @@
+{% extends "layouts/HigherAuthority/commonlayouthigherauthority.html" %}
+
+{% block heading %}Validate Request{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid"> 
+            <div class="col-lg-12">
+                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff; border-radius:10px;background: linear-gradient(to right top, #d16ba5, #ca6eb3, #c073c0, #b378cd, #a37ed9, #9883e0, #8b89e7, #7d8eed, #7694f1, #6e9af5, #679ff8, #5fa5fb); margin-top: 2%">
+                    <div class="card-body">
+                        <div>
+                            <div class="card" style="margin-top: 1%;">
+                                <div class="row">
+                                    <i style="color:#ffffff;font-size:24px; margin-left: 1%;" class="fa fa-check" aria-hidden="true"></i>
+                                    <p style="color:#ffffff;font-size:18px; margin-left: 1%;margin-top: 1%; color:black;"><b>Course Documents</b></p>
+                                    <button class="btn btn-danger active" name="validate1" style="margin-top: 1%; margin-left: 48%; margin-bottom: 1%;">validate</button>
+
+                                    <button class="btn btn-danger active" name="validate1" style="margin-top: 1%; margin-left: 10%; margin-bottom: 1%;">Delete</button>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="margin-top: 1%;">
+                               <div class="row">
+                                    <i style="color:#ffffff;font-size:24px; margin-left: 1%;" class="fa fa-file" aria-hidden="true"></i>
+                                    <p style="color:#ffffff;font-size:18px; margin-left: 1%; margin-top: 1%; color:black;"><b>Result Analysis</b></p>
+                                    <button class="btn btn-danger active" name="validate2" style="margin-top: 1%; margin-left: 50%; margin-bottom: 1%;">validate</button>
+                                    <button class="btn btn-danger active" name="validate1" style="margin-top: 1%; margin-left: 10%; margin-bottom: 1%;">Delete</button>
+                                </div>
+
+                            </div>
+                            
+                            <div class="card" style="margin-top: 1%;">
+                                <div class="row">
+                                    <i style="color:#ffffff;font-size:24px; margin-left: 1%;" class="fa fa-file" aria-hidden="true"></i>
+                                    <p style="color:#ffffff;font-size:18px; margin-left: 1%; color:black;"><b>Paper Analysis</b></p>
+                                    <button class="btn btn-danger active" name="validate3" style="margin-top: 1%; margin-left: 50%; margin-top: 1%; margin-bottom: 1%;">validate</button>
+                                    <button class="btn btn-danger active" name="validate1" style="margin-top: 1%; margin-left: 10%; margin-bottom: 1%;">Delete</button>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="margin-top: 1%;">
+                                <div class="row">
+                                    <i style="color:#ffffff;font-size:24px; margin-left: 1%;" class="fa fa-window-close" aria-hidden="true"></i>
+                                    <p style="color:#ffffff;font-size:18px; margin-left: 1%;margin-top: 1%; color:black;"><b>Assignments</b></p>
+                                    <button class="btn btn-danger active" name="validate4" style="margin-top: 1%; margin-left: 51%; margin-bottom: 1%;">validate</button>
+                                    <button class="btn btn-danger active" name="validate1" style="margin-top: 1%; margin-left: 10%; margin-bottom: 1%;">Delete</button>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>    
+</div>
+{% endblock %}
+    
