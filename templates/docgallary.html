@@ -1,0 +1,45 @@
+{% extends "layouts/HigherAuthority/commonlayouthigherauthority.html" %}
+
+{% block content %}
+	
+	<!--	{% for image in images %}
+			<h1>{{ image }}</h1>
+		{% endfor %}
+-->
+
+<div class="col-lg-12">
+	<div class="content">
+    	<div class="container-fluid"> 
+            <div class="col-lg-12">
+                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border:2px solid #fff; border-radius:10px;background: linear-gradient(to right top, #d16ba5, #ca6eb3, #c073c0, #b378cd, #a37ed9, #9883e0, #8b89e7, #7d8eed, #7694f1, #6e9af5, #679ff8, #5fa5fb); margin-top: 2%">
+                    <div class="card-body">
+                        <div>
+							{% for image in images %}
+								<div class="card" style="margin-top: 1%;">
+									<div class="row">
+										<i style="color:#ffffff;font-size:24px; margin-left: 1%;" class="fa fa-check" aria-hidden="true"></i>
+										<p style="color:#ffffff;font-size:18px; margin-left: 1%;margin-top: 1%; color:black;"><b>{{ image }}</b></p>
+										<button  class="btn btn-danger active" name="validate1" style="margin-top: 1%; margin-left: 48%; margin-bottom: 1%;">validate</button>
+
+										<a href="{{ url_for('delete_image',image_name=image)}}" class="btn btn-danger active" name="validate1" style="margin-top: 1%; margin-left: 10%; margin-bottom: 1%;">Delete</a> 
+									</div>
+								</div>
+							{% endfor %}
+						    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</div>    
+	</div>
+</div>
+	
+
+{% endblock %}
+
+
+
+
+
+
+

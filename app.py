@@ -47,7 +47,7 @@ def login():
                 return render_template("/pages/Staffs/dashboardstaffs.html")
             if user.user_type=='Higher_Authority':
                 return render_template("/pages/HigherAuthority/dashboardhigher.html")
-        return render_template("/login.html")
+    return render_template("/login.html")
 
 
 @app.route('/pages/Staffs/dashboardstaffs')
@@ -150,7 +150,37 @@ def success():
         print( os.path.join(app.root_path, 'Documents',f.filename))
         return render_template("/pages/Staffs/success.html",name=f.filename)
 
+#view document#
+@app.route('/docgallary')
+def get_doc():  
+        images=os.listdir('C:\\Users\\admin\\Desktop\\Paperless_Office\\Documents')
+        print(images)
+        print("done")
+        print()
+        return render_template('docgallary.html',images=images)
+
+@app.route('/approvedoc')
+def approve_doc():  
+        images=os.listdir('C:\\Users\\admin\\Desktop\\Paperless_Office\\Documents')
+        print(images)
+        print("done")
+        print()
+        return render_template('approvedoc.html',images=images)
+
+@app.route('/delete_image/<image_name>')
+def delete_image(image_name):  
+        image_path=os.path.join('Documents',image_name)
+        print(image_path)
+        os.remove(image_path)
+        print("deleted")
+        print()
+        return image_name
+
 
 
 if __name__=='__main__':
     app.run(debug=True)
+
+
+
+    
